@@ -1722,6 +1722,6 @@ if __name__ == '__main__':
     try:
         # Run with threading enabled
         print(f"Starting 2ex.ch service on port {args.port}...")
-        app.run(host='0.0.0.0', port=args.port, threaded=True, debug=False)
+        app.run(host='127.0.0.1', port=args.port, threaded=True, debug=False)
     finally:
         service.shutdown()
